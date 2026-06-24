@@ -249,6 +249,22 @@
             right: 8px !important;
         }
         .leaflet-popup-close-button:hover { color: #e8eaf0 !important; }
+
+        .popup-comentario {
+            margin-top: 9px;
+            padding: 7px 9px;
+            background: #1a2540;
+            border-left: 3px solid #7eb8f7;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #c8d8f0;
+            line-height: 1.5;
+            word-break: break-word;
+        }
+        .popup-comt-icon {
+            margin-right: 5px;
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
@@ -357,7 +373,8 @@ function procesarJSON(puntos) {
                 Tipo: String(tipoVal).trim(),
                 Lat:  parseFloat(latVal),
                 Lng:  parseFloat(lngVal),
-                Año:  anioVal !== null && anioVal !== '' ? parseInt(anioVal) : null
+                Año:  anioVal !== null && anioVal !== '' ? parseInt(anioVal) : null,
+                Comentario: String((p.comentario !== undefined ? p.comentario : (p.Comentario || ''))).trim()
             };
         });
 
@@ -449,6 +466,9 @@ function obtenerColorPorTipo(tipo) {
 }
 
 function crearPopup(p) {
+    const comentarioHtml = p.Comentario
+        ? `<div class="popup-comentario"><span class="popup-comt-icon">💬</span>${p.Comentario}</div>`
+        : '';
     return `
         <div class="popup-inner">
             <div class="pid">
@@ -465,6 +485,7 @@ function crearPopup(p) {
                     <div class="lbl">Año</div>
                 </div>
             </div>
+            ${comentarioHtml}
         </div>
     `;
 }
