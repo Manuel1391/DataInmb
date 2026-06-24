@@ -1301,13 +1301,13 @@
   },
   {
     "ID": 131,
-    "tipo": "Aviso",
+    "tipo": "Cierre",
     "coordenadas": {
       "lat": -12.111657715455443,
       "lng": -77.04971640020443
     },
-    "anio": 2025,
-    "comentario": "Según aviso: Casa como terreno"
+    "anio": 2026,
+    "comentario": "Casa como terreno, Aviso y Cierre"
   },
   {
     "ID": 132,
@@ -5988,5 +5988,45 @@
     },
     "anio": 2026,
     "comentario": "Según aviso: Local como terreno"
+  },
+  {
+    "ID": 600,
+    "tipo": "Cierre",
+    "coordenadas": {
+      "lat": -12.167838794882961,
+      "lng": -77.02621936798097
+    },
+    "anio": 2023,
+    "comentario": "Terreno proy inmob"
+  },
+  {
+    "ID": 601,
+    "tipo": "Cierre",
+    "coordenadas": {
+      "lat": -12.16439823771119,
+      "lng": -77.02426671981813
+    },
+    "anio": 2023,
+    "comentario": "Terreno proy inmob"
+  },
+  {
+    "ID": 602,
+    "tipo": "Cierre",
+    "coordenadas": {
+      "lat": -12.129491924728635,
+      "lng": -76.99722468852998
+    },
+    "anio": 2024,
+    "comentario": "Terreno proy inmb"
+  },
+  {
+    "ID": 603,
+    "tipo": "Cierre",
+    "coordenadas": {
+      "lat": -12.131464403699354,
+      "lng": -76.9937700033188
+    },
+    "anio": 2023,
+    "comentario": "Terreno proy inmb"
   }
 ]
